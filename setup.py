@@ -1,21 +1,30 @@
-"""
-    Setup file for Mapping.
-    Use setup.cfg to configure your project.
+import os
+from setuptools import setup, find_packages
 
-    This file was generated with PyScaffold 4.2.2.
-    PyScaffold helps you to put up the scaffold of your new Python project.
-    Learn more under: https://pyscaffold.org/
-"""
-from setuptools import setup
+# Utility function to read the README file.
+# Used for the long_description.  It's nice, because now 1) we have a top level
+# README file and 2) it's easier to type in the README file than to put a raw
+# string in below ...
 
-if __name__ == "__main__":
-    try:
-        setup(use_scm_version={"version_scheme": "no-guess-dev"})
-    except:  # noqa
-        print(
-            "\n\nAn error occurred while building the project, "
-            "please ensure you have the most updated version of setuptools, "
-            "setuptools_scm and wheel with:\n"
-            "   pip install -U setuptools setuptools_scm wheel\n\n"
-        )
-        raise
+
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+
+setup(
+    name="Mapping",
+    version="0.0.1",
+    author="Christopher Müller",
+    author_email="christophermueller2@outlook.de",
+    description=("An Package to handle different task used while mapping"),
+    license="BSD",
+    keywords="SpielerNogard",
+    url="",
+    packages=find_packages(),
+    long_description=read('README.md'),
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Topic :: Utilities",
+        "License :: OSI Approved :: BSD License",
+    ],
+)
