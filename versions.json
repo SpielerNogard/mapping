@@ -1,7 +1,6 @@
 {
   "BulkVersion": "1.0.2",
-  "ForcedPogo": "0_239_0",
-  "32bitSupport": "0_239_1",
-  "64bitSupport": "0_239_1",
-  "PogoDroid": "33.1.23"
+  "ForcedPogo": "0.239.0",
+  "SupportedPogo": "0.239.1",
+  "PogoDroid": "33.1.34"
 }
